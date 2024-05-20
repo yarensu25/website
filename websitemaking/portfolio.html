@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            padding: 50px;
+            background-image: url('background.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+
+        .section__header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: orange;
+            text-align: center;
+        }
+
+        .section__container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 100px; /* Adjust the gap between portfolio items */
+        }
+
+        .portfolio-item {
+            flex: 0 0 calc(30% - 10px); /* Adjust width of portfolio items */
+            background-color: #faeedd;
+            padding: 30px; /* Adjust the padding */
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .portfolio-image {
+            width: 100%; /* Make the image take up the full width of its container */
+            max-width: 800px; /* Set a maximum width for the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 20px; /* Add border-radius */
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 24px;
+            margin: 20px 0;
+            text-align: center; /* Center-align the heading */
+        }
+
+        .portfolio-item p {
+            color: #666;
+            font-size: 16px;
+            text-align: center; /* Center-align the paragraph */
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <h2 class="section__header">My Portfolio</h2>
+        <div class="section__container">
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="palannga.jpg" alt="Project 1">
+                </div>
+                <div class="portfolio-description">
+                    <h3>CSS PORTRAIT</h3>
+                    <p>
+                        Welcome to my portfolio! Here, you'll find a showcase of some of my latest projects and creations. 
+                        Each project represents a unique journey where I've poured my creativity, skills, and passion into bringing ideas to life.
+                        From web development to graphic design, each piece reflects my dedication to quality and innovation.
+                        Take your time exploring the projects showcased here. 
+                        You'll find detailed descriptions accompanying each project, providing insights into the objectives, challenges, and solutions implemented. 
+                        Whether you're here for inspiration, collaboration opportunities, or simply to appreciate good design, I hope you enjoy your visit!
+                        Feel free to reach out if you have any questions or if you'd like to discuss potential collaborations. 
+                        Thank you for stopping by, and I look forward to connecting with you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <ul>
+        <li><a href="portfolio2.html" class="portfolio-button">Page 2</a></li>
+    </ul>
+</body>
+</html>
